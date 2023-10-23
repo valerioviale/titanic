@@ -17,3 +17,11 @@ print("Number of passengers who survived:", survived)
 # Number of passengers under 18
 minors = (titanic_data.Age < 18).sum()
 print("Number of passengers under 18:", minors)
+
+# how many people survived the shipwreck
+survived_fraction = (survived*100)/total
+print("Percentage of survival:",survived_fraction, "%")
+
+# minors fraction of total
+minors_fraction = (minors*100)/total
+print("Percentage of Minors:", minors_fraction, "%") 
